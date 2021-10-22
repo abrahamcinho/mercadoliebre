@@ -1,62 +1,74 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
-
 h3{
     font-size: 24px;
 }
-
 p{
     font-size: 12px;
 }
 div.top-header{
-    padding: 5%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
 header{
     background-color: #EAC926;
 }
-
 header div.logo{
     width: 50%;
 }
-
 header div.logo{
-    padding: 10px;
+    padding: 10px 5px;
 }
 header nav{
     font-size: 12px;
 }
-
 header ul li{
     list-style-type: none;
 }
-
 header ul li a{
     text-decoration: none;
     color: #000;
 }
-
+header .form{
+    width: 50%;
+    display: flex;
+    align-self: center;
+}
 header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    right: 10px;
+}
+header .form .submit i{
+    line-height: 25px;
+}
 header div.top-header p{
     width: 100%;
     text-align: center;
@@ -66,7 +78,6 @@ header div.top-header p{
 div.burger-menu{
     text-align: center;
 }
-
 div.burger-menu i{
     background-color: #0044AA;
     border-radius: 5px;
@@ -74,48 +85,289 @@ div.burger-menu i{
     font-size: 20px;
     height: 40px;
     margin: 10px 0px 20px 0px;
-    padding: 10px;
     width: 40px;
+    line-height: 40px;
 }
-
 article div.main-article{
     width: 100%;
+    border-top:1px solid #ebebeb;
+    padding: 15px;
+    box-sizing: border-box;
 }
+article div.main-article i{
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 12px 10px;
+    position:relative;
+    top:-35px;
+    float: right;
+    transition: all 0.5s ease-out;
 
+}
+article div.main-article .article-details{
+    display: flex;
+    padding:10px 0 15px;
+}
 .price{
     font-size: 18px;
+    width: 30vw;
+    line-height: 20px;
+    margin-right: 5px;
 }
-
+.discount{
+    width: 70vw;
+    align-self: end;
+}
 .discount,
 .description{
     font-size: 16px;
     font-weight: normal;
 }
-
 h3,
 .description{
     color: #666;
 }
-
 section.banner img{
     width: 100%;
 }
-
 main{
     width: 90%;
+    margin: 0 auto;
 }
-
 main section article{
     background-color: #fff;
 }
-
 main section article img{
     width: 100%;
 }
-
 main section article i,
 .discount{
     color: #39b54a;
 }
+main section .products article{
+    margin: 10px 0;
+}
+main .titulo-form{
+    margin: 10px 0;
+    text-align: center;
+}
+/*Formulario de Registro*/
+form#registro{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    max-width: 500px;
+}
+form#registro label{
+    font-weight: bold;
+}
+form#registro input{
+    width: 100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #fff;
+    border-radius: 5px;
+}
+form#registro .fa-calendar{
+    position: relative;
+    top: -40px;
+    font-size: 16px;
+    left: 90%;
+    padding: 0 15px;
+    line-height: 20px;
+}
+form#registro input[type="date"], form#registro input[type="file"]{
+    font-family: 'Roboto', sans-serif;
+}
+form#registro input[type="radio"]{
+    width: 10vw;
+    margin: 15px 0;
+}
+form#registro input[type="checkbox"]{
+    width: 10vw;
+    margin: 15px 0;
+}
+form#registro input[type="file"]{
+    border: 0px;
+}
+form#registro button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #fff;
+    background-color: #0044AA;
+    border: 1px solid #0044AA;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+form#registro button:hover{
+    background-color: #0022AA;
+    border: 1px solid #0022AA;
+    transition: all 0.5s ease-out;
 
+}
+/*Formulario de Login*/
+form#login{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    max-width: 500px;
+}
+form#login input{
+    width: 100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #fff;
+    border-radius: 5px;
+}
+form#login button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #fff;
+    background-color: #0044AA;
+    border: 1px solid #0044AA;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+form#login button:hover{
+    background-color: #0022AA;
+    border: 1px solid #0022AA;
+    transition: all 0.5s ease-out;
 
+}
+/*Footer*/
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color:#666;
+    background-color: #fff;
+}
+.footer-container .footer-col{
+    width: 100%;
+    margin: 40px 0px;
+    padding: 0 20px;
+}
+.footer-container .footer-col i{
+    color: #0044AA;
+    font-size: 2em;
+    margin-bottom:10px;
+    transition: all 0.2s ease-out;
+}
+.footer-container .footer-col i:hover{
+    color: #EAC926;
+    transition: all 0.2s ease-out;
+}
+.footer-container .footer-col h3{
+    padding: 5px;
+    font-size: 18px;
+}
+.footer-container .footer-col p{
+    font-size:12px;
+}
+.copyright{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    color:#666;
+    margin: 40px 0 10px;
+    font-size: 12px;
+
+}
+/*Exclusivo Mobile*/
+@media(min-width:361px){
+    header nav{
+        display: none;
+    }
+}
+/*Exclusivo Tablet*/
+@media(min-width:769px){
+    div.burger-menu{
+        display: none;
+    }
+    header nav{
+        display: inline-block;
+    }
+    .description{
+        visibility: hidden;
+        transition: all 0.1s ease-out;
+    }
+    main section .products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main section .products article{
+        width: 40vw;
+        margin: 10px auto;
+        transition: all 0.3s ease-out;
+    }
+    header div.logo{
+        width: 30vw;
+    }
+    header .form{
+        width: 36vw;
+        padding: 0 5vw;
+    }
+    header div.top-header p{
+        width: 30vw;
+        align-self: center;
+    }
+    header nav{
+        display: flex;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        width: 50vw;
+        padding: 0 5vw;
+    }
+    header nav ul li{
+        padding: 5px 6px 20px;
+    }
+    /*Formulario de Registro*/
+    form#registro input[type="checkbox"]{
+        width: 5vw;
+    }
+    form#registro input[type="radio"]{
+        width: 5vw;
+    }
+    
+  }
+/*Exclusivo Desktop*/
+@media(min-width:998px){
+    div.top-header{
+        padding:10px 30px;
+    }
+    main section .products article{
+        width: 20vw;
+    }
+    header nav .nav-left{
+        justify-content: flex-start;
+    }
+    header nav .nav-right{
+        justify-content: flex-end;
+    }
+    header .form{
+        width: 30vw;
+        padding: 0 5vw;
+    }
+    article:hover .description{
+        visibility: visible;
+        transition: all 0.3s ease-out;
+    }
+    main section .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100 ,100 ,100);
+        transition: all 0.3s ease-out;
+    }
+    .products article:hover i{
+        transform: rotate(-90deg);
+        transition: all 0.3s ease-out;
+    }
+    .footer-container .footer-col{
+        width: 30vw;
+    }
+  }
